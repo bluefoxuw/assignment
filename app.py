@@ -61,7 +61,7 @@ if uploaded_file:
     st.success(f"✅ Found {len(questions)} questions.")
 
     if st.button("Get Answers"):
-        for i, question in enumerate(questions):  # Limit for safety
+        for i, question in enumerate(questions[:5]):  # Limit for safety
             st.markdown(f"###{question}")
             with st.spinner("Getting answer..."):
                 answer = get_answer(question)
