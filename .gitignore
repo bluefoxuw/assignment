@@ -1,0 +1,18 @@
+# Ignore Python virtual environments
+env/
+venv/
+__pycache__/
+*.pyc
+
+# Ignore OS & IDE files
+.DS_Store
+*.swp
+
+# Ignore secrets
+.streamlit/secrets.toml
+
+# Don't ignore your actual code!
+!app.py
+!requirements.txt
+!.streamlit/
+
